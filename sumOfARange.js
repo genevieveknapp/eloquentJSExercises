@@ -33,6 +33,7 @@ function modifiedRange(start, end, stepValue = 1) {
         }
     }
     else {
+        stepValue = -1;
         for (let i = start; i >= end; i = i + stepValue) {
             array.push(i);
         } 
@@ -44,4 +45,4 @@ console.log(range(2,99))
 console.log(sum(range(1,10)))
 console.log(modifiedRange(2,99,2))
 console.log(modifiedRange(2,99))
-console.log(modifiedRange(5,2,-1))
+console.log(modifiedRange(5,2))
