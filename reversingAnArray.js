@@ -19,12 +19,11 @@ console.log(reverseArray(["A", "B", "C"]));
 function reverseArrayInPlace(array) {
     let a;
     let b;
-    let x = array.length;
     for (let i = 0; i < Math.floor(array.length/2); i++) {
         a = array[i];
-        b = array[x - 1 - i]
+        b = array[array.length - 1 - i]
         array[i] = b;
-        array[x - 1 - i] = a;
+        array[array.length - 1 - i] = a;
     }
     return array;
 }
